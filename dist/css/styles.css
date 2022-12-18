@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+
+article {
+  width: 200px;
+  height: 240px;
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  color: #ffff;
+}
+
+header {
+  margin: 10px;
+  font-size: 25px;
+}
+
+p {
+  font-size: 10px;
+}
+
+.book__box1 {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.book__box2 {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.book1 {
+  background: linear-gradient(
+      208.29deg,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 0) 92.13%
+    ),
+    #f2c94c;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.08);
+  border-radius: 2px;
+}
+
+.book2 {
+  background: linear-gradient(
+      208.29deg,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 0) 92.13%
+    ),
+    #f2994a;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.08);
+  border-radius: 2px;
+}
+
+.book3 {
+  background: linear-gradient(
+      208.29deg,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 0) 92.13%
+    ),
+    #eb5757;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.08);
+  border-radius: 2px;
+}
+
+.book4 {
+  background: linear-gradient(
+      208.29deg,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 0) 92.13%
+    ),
+    #9b51e0;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.08);
+  border-radius: 2px;
+}
+
+.book5 {
+  background: linear-gradient(
+      208.29deg,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 0) 92.13%
+    ),
+    #56ccf2;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.08);
+  border-radius: 2px;
+}
+
+.book6 {
+  background: linear-gradient(
+      208.29deg,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 0) 92.13%
+    ),
+    #2f80ed;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.08);
+  border-radius: 2px;
+}
+
+.book7 {
+  background: linear-gradient(
+      208.29deg,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 0) 92.13%
+    ),
+    #6fcf97;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.08);
+  border-radius: 2px;
+}
+
+.book8 {
+  background: linear-gradient(
+      208.29deg,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 0) 92.13%
+    ),
+    #27ae60;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.08);
+  border-radius: 2px;
+}
+
+.book__line {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.4) 28.65%,
+    rgba(0, 0, 0, 0.4) 67.71%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  width: 3px;
+  height: 240px;
+  left: 952px;
+  top: 202px;
+  margin-left: 10px;
+  position: absolute;
+}
