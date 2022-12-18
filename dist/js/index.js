@@ -19,9 +19,15 @@ async function getBooks() {
 getBooks();
 
 const mainElem = document.querySelector("main");
-const bookElem = document.querySelector(".book1");
+const secondMainElem = document.querySelector(".main__second__page");
+const books = document.querySelectorAll(".book");
+const secondPageBook = document.querySelector(".second__page_book_container");
 
-bookElem.addEventListener("click", () => {
-  console.log("Clicked");
-  mainElem.style.display = "none";
+books.forEach((book) => {
+  book.addEventListener("click", () => {
+    console.log(book.style.background);
+    mainElem.style.display = "none";
+    secondMainElem.style.display = "flex";
+    secondPageBook.style.background = book.style.background;
+  });
 });
