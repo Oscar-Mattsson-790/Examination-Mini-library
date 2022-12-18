@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Secular+One&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +11,8 @@ body {
   height: 100vh;
   display: flex;
   justify-content: center;
+  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Secular One", sans-serif;
 }
 
 main {
@@ -23,18 +27,25 @@ article {
   height: 240px;
   background-color: yellow;
   display: flex;
-  flex-direction: column;
-  padding: 30px;
   color: #ffff;
 }
 
 header {
   margin: 10px;
-  font-size: 25px;
+  font-size: 22px;
+  line-height: 54px;
 }
 
 p {
   font-size: 10px;
+}
+
+.book_title_author {
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .book__box1 {
@@ -58,6 +69,8 @@ p {
     #f2c94c;
   box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.08);
   border-radius: 2px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .book2 {
@@ -69,6 +82,8 @@ p {
     #f2994a;
   box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.08);
   border-radius: 2px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .book3 {
@@ -80,6 +95,8 @@ p {
     #eb5757;
   box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.08);
   border-radius: 2px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .book4 {
@@ -91,6 +108,8 @@ p {
     #9b51e0;
   box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.08);
   border-radius: 2px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .book5 {
@@ -102,6 +121,8 @@ p {
     #56ccf2;
   box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.08);
   border-radius: 2px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .book6 {
@@ -113,6 +134,8 @@ p {
     #2f80ed;
   box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.08);
   border-radius: 2px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .book7 {
@@ -124,6 +147,8 @@ p {
     #6fcf97;
   box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.08);
   border-radius: 2px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .book8 {
@@ -135,6 +160,8 @@ p {
     #27ae60;
   box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.08);
   border-radius: 2px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .book__line {
@@ -150,5 +177,4 @@ p {
   left: 952px;
   top: 202px;
   margin-left: 10px;
-  position: absolute;
 }
