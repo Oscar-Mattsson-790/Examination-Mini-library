@@ -1,10 +1,10 @@
 {
   "compilerOptions": {
-    "target": "ES6", // Vilken JS version ska vi kompilera till
-    "outDir": "./dist/js", // Var ska JS-filen hamna? I vilken mapp?
+    "target": "ES6",
+    "outDir": "./dist/js",
     "watch": true
   },
-  "include": ["./src"], // Vad för filer ska vi kompliera till JS?
-  "exclude": [], // Vad ska vi inte kompilera?
+  "include": ["./src"],
+  "exclude": [],
   "strict": true
 }
