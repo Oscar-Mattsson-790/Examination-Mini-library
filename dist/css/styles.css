@@ -153,10 +153,6 @@ header {
   border: none;
 }
 
-span {
-  transform: rotate(180deg);
-}
-
 .second__page_container {
   display: flex;
   gap: 40px;
@@ -266,4 +262,9 @@ span {
 
 .data {
   color: rgba(255, 255, 255, 0.651);
+}
+
+.arrow {
+  transform: rotate(180deg);
+  font-size: 27px;
 }
