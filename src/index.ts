@@ -19,22 +19,28 @@ async function getBooks() {
 ///////////////////////////////////////////////
 
 // Selecting Elements
-const mainPage = document.querySelector("main");
-const secondMainPage = document.querySelector(".main__second__page");
-const books = document.querySelectorAll(".book");
-const secondPageBook = document.querySelector(".second__page_book_container");
-const bookTitle1 = document.querySelector("#book_title_1");
-const bookTitle2 = document.querySelector("#book_title_2");
-const bookAuthor1 = document.querySelector("#book_author_1");
-const bookAuthor2 = document.querySelector("#book_author_2");
-const bookParagraph = document.querySelector("#paragraph_data");
-const audience = document.querySelector("#audience");
-const pages = document.querySelector("#pages");
-const firstPublished = document.querySelector("#firstPublished");
-const publisher = document.querySelector("#publisher");
+const mainPage: HTMLElement = document.querySelector("main");
+const secondMainPage: HTMLElement = document.querySelector(
+  ".main__second__page"
+);
+const books: HTMLElement = document.querySelectorAll(".book");
+const secondPageBook: HTMLElement = document.querySelector(
+  ".second__page_book_container"
+);
+const bookTitle1: HTMLElement = document.querySelector("#book_title_1");
+const bookTitle2: HTMLElement = document.querySelector("#book_title_2");
+const bookAuthor1: HTMLElement = document.querySelector("#book_author_1");
+const bookAuthor2: HTMLElement = document.querySelector("#book_author_2");
+const bookParagraph: HTMLElement = document.querySelector("#paragraph_data");
+const audience: HTMLElement = document.querySelector("#audience");
+const pages: HTMLElement = document.querySelector("#pages");
+const firstPublished: HTMLElement = document.querySelector("#firstPublished");
+const publisher: HTMLElement = document.querySelector("#publisher");
 
 // Return Arrow Button
-const returnArrowButton = document.querySelector(".return__arrow__button");
+const returnArrowButton: HTMLElement = document.querySelector(
+  ".return__arrow__button"
+);
 
 returnArrowButton.addEventListener("click", () => {
   mainPage.style.display = "flex";
@@ -50,10 +56,8 @@ books.forEach((book) => {
     secondPageBook.style.background = book.style.background;
 
     getBooks().then((data) => {
-      console.log(data);
       data.forEach((bookInfo) => {
         if (Number(book.id) === bookInfo.id) {
-          console.log(`Id på boken: ${book.id}`);
           bookTitle1.innerHTML = bookInfo.title;
           bookTitle2.innerHTML = bookInfo.title;
           bookAuthor1.innerHTML = bookInfo.author;

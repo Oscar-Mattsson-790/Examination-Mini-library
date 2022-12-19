@@ -53,10 +53,8 @@ books.forEach((book) => {
         secondMainPage.style.display = "flex";
         secondPageBook.style.background = book.style.background;
         getBooks().then((data) => {
-            console.log(data);
             data.forEach((bookInfo) => {
                 if (Number(book.id) === bookInfo.id) {
-                    console.log(`Id på boken: ${book.id}`);
                     bookTitle1.innerHTML = bookInfo.title;
                     bookTitle2.innerHTML = bookInfo.title;
                     bookAuthor1.innerHTML = bookInfo.author;
