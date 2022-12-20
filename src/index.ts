@@ -48,7 +48,6 @@ returnArrowButton.addEventListener("click", () => {
 });
 
 // Get data for books
-
 books.forEach((book) => {
   book.addEventListener("click", () => {
     mainPage.style.display = "none";
