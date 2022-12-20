@@ -23,7 +23,7 @@ const mainPage: HTMLElement = document.querySelector("main");
 const secondMainPage: HTMLElement = document.querySelector(
   ".main__second__page"
 );
-const books: HTMLElement = document.querySelectorAll(".book");
+const books: NodeListOf<HTMLElement> = document.querySelectorAll(".book");
 const secondPageBook: HTMLElement = document.querySelector(
   ".second__page_book_container"
 );
@@ -48,6 +48,7 @@ returnArrowButton.addEventListener("click", () => {
 });
 
 // Get data for books
+
 books.forEach((book) => {
   book.addEventListener("click", () => {
     mainPage.style.display = "none";
