@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300,700&family=Secular+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto:wght@100&family=Secular+One&display=swap");
 
 * {
   margin: 0;
@@ -11,8 +11,10 @@ body {
   height: 100vh;
   display: flex;
   justify-content: center;
+  font-family: "Roboto", sans-serif;
   font-family: "Roboto Condensed", sans-serif;
   font-family: "Secular One", sans-serif;
+  font-weight: lighter;
 }
 
 header {

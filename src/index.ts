@@ -1,12 +1,25 @@
 // GET API
 
+interface Books {
+  audience: string;
+  author: string;
+  color: string;
+  id: number;
+  pages: string;
+  plot: string;
+  publisher: string;
+  title: string;
+  year: string;
+}
+
 async function getBooks() {
   try {
     const response = await fetch(
       "https://my-json-server.typicode.com/zocom-christoffer-wallenberg/books-api/books"
     );
     if (response.status === 200) {
-      const data = await response.json();
+      const data: Books[] = await response.json();
+      console.log(data);
       return data;
     } else {
       throw Error("Något gick fel, försök igen senare");
@@ -16,6 +29,7 @@ async function getBooks() {
   }
 }
 
+getBooks();
 ///////////////////////////////////////////////
 
 // Selecting Elements
