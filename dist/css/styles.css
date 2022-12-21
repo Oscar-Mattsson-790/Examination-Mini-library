@@ -149,7 +149,7 @@ header {
   padding: 80px;
   gap: 50px;
   background-color: rgba(0, 0, 0, 0.809);
-  /* display: none; */
+  display: none;
 }
 
 .return__arrow__button {

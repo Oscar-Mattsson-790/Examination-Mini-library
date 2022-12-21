@@ -14,6 +14,7 @@ function getBooks() {
             const response = yield fetch("https://my-json-server.typicode.com/zocom-christoffer-wallenberg/books-api/books");
             if (response.status === 200) {
                 const data = yield response.json();
+                console.log(data);
                 return data;
             }
             else {

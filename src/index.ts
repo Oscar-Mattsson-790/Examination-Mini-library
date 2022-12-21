@@ -19,6 +19,7 @@ async function getBooks() {
     );
     if (response.status === 200) {
       const data: Books[] = await response.json();
+      console.log(data);
       return data;
     } else {
       throw Error("Något gick fel, försök igen senare");
