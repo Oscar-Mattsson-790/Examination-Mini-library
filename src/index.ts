@@ -69,7 +69,7 @@ books.forEach((book: HTMLElement) => {
     secondPageBook.style.background = book.style.background;
 
     getBooks().then((data: Book[]) => {
-      data.forEach((bookInfo) => {
+      data.forEach((bookInfo: Book) => {
         if (Number(book.id) === bookInfo.id) {
           bookTitle1.innerHTML = bookInfo.title;
           bookTitle2.innerHTML = bookInfo.title;
