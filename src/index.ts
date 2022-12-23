@@ -62,13 +62,13 @@ returnArrowButton.addEventListener("click", () => {
 
 // Get data for books
 
-books.forEach((book) => {
+books.forEach((book: HTMLElement) => {
   book.addEventListener("click", () => {
     mainPage.style.display = "none";
     secondMainPage.style.display = "flex";
     secondPageBook.style.background = book.style.background;
 
-    getBooks().then((data) => {
+    getBooks().then((data: Book[]) => {
       data.forEach((bookInfo) => {
         if (Number(book.id) === bookInfo.id) {
           bookTitle1.innerHTML = bookInfo.title;
