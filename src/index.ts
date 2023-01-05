@@ -28,7 +28,7 @@ async function getBooks() {
   }
 }
 
-getBooks();
+const bookData = getBooks();
 ///////////////////////////////////////////////
 
 // Selecting Elements
@@ -68,7 +68,7 @@ books.forEach((book: HTMLElement) => {
     secondMainPage.style.display = "flex";
     secondPageBook.style.background = book.style.background;
 
-    getBooks().then((data: Book[]) => {
+    bookData.then((data: Book[]) => {
       data.forEach((bookInfo: Book) => {
         if (Number(book.id) === bookInfo.id) {
           bookTitle1.innerHTML = bookInfo.title;
